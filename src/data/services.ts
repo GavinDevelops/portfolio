@@ -2,43 +2,29 @@ export interface Service {
   id: string
   title: string
   description: string
-  icon: 'code' | 'api' | 'database' | 'blockchain' | 'consulting'
+  icon: 'code' | 'api' | 'mobile'
 }
 
 export const services: Service[] = [
   {
     id: 'fullstack',
-    title: 'Full Stack Development',
+    title: 'Web Development',
     description:
-      'End-to-end web applications with modern frameworks, responsive design, and scalable architecture.',
+      'Modern, responsive websites and web applications built with React and Tailwind CSS.',
     icon: 'code',
   },
   {
     id: 'api',
-    title: 'API Architecture',
+    title: 'Backend & APIs',
     description:
-      'RESTful and GraphQL APIs designed for performance, security, and seamless integration.',
+      'Clean, well-documented REST APIs built with Go to power your applications.',
     icon: 'api',
   },
   {
-    id: 'database',
-    title: 'Database Design',
+    id: 'mobile',
+    title: 'iOS Development',
     description:
-      'Optimized database schemas, query performance tuning, and data migration strategies.',
-    icon: 'database',
-  },
-  {
-    id: 'blockchain',
-    title: 'Smart Contracts',
-    description:
-      'Secure Solidity smart contracts, DeFi protocols, and Web3 integrations.',
-    icon: 'blockchain',
-  },
-  {
-    id: 'consulting',
-    title: 'Technical Consulting',
-    description:
-      'Architecture reviews, code audits, and strategic technical guidance for your projects.',
-    icon: 'consulting',
+      'Native iOS applications built with Swift for a smooth, polished user experience.',
+    icon: 'mobile',
   },
 ]

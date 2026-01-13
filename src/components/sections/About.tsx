@@ -2,10 +2,10 @@ import { motion } from 'framer-motion'
 import { SectionHeader } from '@/components/ui'
 import { useScrollReveal } from '@/hooks'
 
-const stats = [
-  { value: '8+', label: 'Years Experience' },
-  { value: '50+', label: 'Projects Completed' },
-  { value: '12', label: 'Happy Clients' },
+const focus = [
+  { label: 'Web Apps', description: 'React & Tailwind' },
+  { label: 'Backend', description: 'Go & APIs' },
+  { label: 'Mobile', description: 'Swift' },
 ]
 
 export function About() {
@@ -16,7 +16,7 @@ export function About() {
       <div className="container">
         <SectionHeader
           title="About Me"
-          subtitle="Passionate about building scalable applications and solving complex problems."
+          subtitle="A developer who loves building things that work."
         />
 
         <div className="grid gap-12 md:grid-cols-2 md:gap-16">
@@ -30,24 +30,22 @@ export function About() {
             className="space-y-6"
           >
             <p className="text-lg text-secondary">
-              I&apos;m a full stack developer with a passion for creating elegant solutions
-              to complex problems. With experience spanning backend services, frontend
-              applications, and blockchain development, I bring a holistic approach to
-              every project.
+              I&apos;m Gavin, a full stack developer passionate about creating clean,
+              functional applications. I enjoy working across the entire stack—from
+              building responsive interfaces to designing backend services.
             </p>
             <p className="text-lg text-secondary">
-              My expertise includes building high-performance APIs with Go and Node.js,
-              crafting responsive user interfaces with React, and developing secure smart
-              contracts on Ethereum. I believe in writing clean, maintainable code that
-              scales.
+              My current toolkit includes Go for backend development, React and
+              Tailwind for web interfaces, and Swift for mobile. I&apos;m also
+              exploring blockchain development with Solidity on the side.
             </p>
             <p className="text-lg text-secondary">
-              When I&apos;m not coding, you&apos;ll find me exploring new technologies,
-              contributing to open source, or sharing knowledge with the developer community.
+              I&apos;m always learning and looking for interesting projects to work on.
+              If you have an idea you&apos;d like to bring to life, I&apos;d love to hear about it.
             </p>
           </motion.div>
 
-          {/* Stats */}
+          {/* Focus Areas */}
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -56,12 +54,12 @@ export function About() {
             className="flex flex-col justify-center"
           >
             <div className="grid grid-cols-3 gap-8">
-              {stats.map((stat) => (
-                <div key={stat.label} className="text-center">
-                  <div className="font-mono text-3xl text-amber-400 md:text-4xl">
-                    {stat.value}
+              {focus.map((item) => (
+                <div key={item.label} className="text-center">
+                  <div className="font-mono text-lg text-amber-400 md:text-xl">
+                    {item.label}
                   </div>
-                  <div className="mt-2 text-sm text-muted">{stat.label}</div>
+                  <div className="mt-2 text-sm text-muted">{item.description}</div>
                 </div>
               ))}
             </div>

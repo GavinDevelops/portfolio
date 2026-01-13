@@ -34,7 +34,7 @@ export function Header() {
       <nav className="container flex h-16 items-center justify-between md:h-20">
         {/* Logo */}
         <a href="#" className="font-serif text-xl text-primary">
-          YN
+          GP
         </a>
 
         {/* Desktop Nav */}

@@ -13,7 +13,7 @@ export function Footer() {
     <footer className="border-t border-raised bg-base py-8">
       <div className="container flex flex-col items-center justify-between gap-4 md:flex-row">
         <p className="text-sm text-muted">
-          &copy; {currentYear} Your Name. Built with React & coffee.
+          &copy; {currentYear} Gavin Pase. Built with React & coffee.
         </p>
 
         <div className="flex items-center gap-4">

@@ -43,7 +43,7 @@ export function Hero() {
             variants={item}
             className="font-serif text-4xl text-primary md:text-6xl lg:text-7xl"
           >
-            Your Name
+            Gavin Pase
           </motion.h1>
 
           <motion.p
@@ -57,7 +57,7 @@ export function Hero() {
             variants={item}
             className="mt-6 font-mono text-sm text-muted md:text-base"
           >
-            // building the future, one commit at a time
+            // turning ideas into reality with clean code
           </motion.p>
 
           <motion.div variants={item} className="mt-10 flex flex-wrap gap-4">

@@ -2,9 +2,7 @@ import { motion } from 'framer-motion'
 import {
   Code,
   PlugsConnected,
-  Database,
-  CurrencyEth,
-  Lightbulb,
+  DeviceMobile,
 } from '@phosphor-icons/react'
 import { SectionHeader, Card } from '@/components/ui'
 import { services } from '@/data'
@@ -12,9 +10,7 @@ import { services } from '@/data'
 const iconMap = {
   code: Code,
   api: PlugsConnected,
-  database: Database,
-  blockchain: CurrencyEth,
-  consulting: Lightbulb,
+  mobile: DeviceMobile,
 }
 
 const container = {

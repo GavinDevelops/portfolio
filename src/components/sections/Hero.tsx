@@ -22,6 +22,62 @@ const item = {
   },
 }
 
+function CodeBlock() {
+  return (
+    <motion.div
+      initial={{ opacity: 0, x: 20 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.6, delay: 0.8, ease: [0.25, 0.1, 0.25, 1] }}
+      className="hidden lg:block"
+    >
+      <div className="rounded-lg border border-raised bg-base/80 backdrop-blur-sm">
+        {/* Window chrome */}
+        <div className="flex items-center gap-2 border-b border-raised px-4 py-3">
+          <div className="h-3 w-3 rounded-full bg-red-500/80" />
+          <div className="h-3 w-3 rounded-full bg-amber-500/80" />
+          <div className="h-3 w-3 rounded-full bg-green-500/80" />
+          <span className="ml-2 font-mono text-xs text-muted">gavin.ts</span>
+        </div>
+        {/* Code content */}
+        <pre className="p-5 font-mono text-sm leading-relaxed">
+          <code>
+            <span className="text-syntax-purple">const</span>{' '}
+            <span className="text-primary">gavin</span>{' '}
+            <span className="text-muted">=</span>{' '}
+            <span className="text-muted">{'{'}</span>
+            {'\n'}
+            {'  '}<span className="text-red-400">role</span>
+            <span className="text-muted">:</span>{' '}
+            <span className="text-syntax-green">"Full Stack Developer"</span>
+            <span className="text-muted">,</span>
+            {'\n'}
+            {'  '}<span className="text-red-400">stack</span>
+            <span className="text-muted">:</span>{' '}
+            <span className="text-muted">[</span>
+            <span className="text-syntax-green">"Go"</span>
+            <span className="text-muted">,</span>{' '}
+            <span className="text-syntax-green">"React"</span>
+            <span className="text-muted">,</span>{' '}
+            <span className="text-syntax-green">"Swift"</span>
+            <span className="text-muted">],</span>
+            {'\n'}
+            {'  '}<span className="text-red-400">passion</span>
+            <span className="text-muted">:</span>{' '}
+            <span className="text-syntax-green">"Clean code"</span>
+            <span className="text-muted">,</span>
+            {'\n'}
+            {'  '}<span className="text-red-400">available</span>
+            <span className="text-muted">:</span>{' '}
+            <span className="text-syntax-orange">true</span>
+            {'\n'}
+            <span className="text-muted">{'};'}</span>
+          </code>
+        </pre>
+      </div>
+    </motion.div>
+  )
+}
+
 export function Hero() {
   return (
     <section className="relative flex min-h-screen items-center overflow-hidden">
@@ -33,40 +89,45 @@ export function Hero() {
 
       {/* Content */}
       <div className="container relative z-10 py-32 md:py-40">
-        <motion.div
-          variants={container}
-          initial="hidden"
-          animate="show"
-          className="max-w-3xl"
-        >
-          <motion.h1
-            variants={item}
-            className="font-serif text-4xl text-primary md:text-6xl lg:text-7xl"
+        <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
+          {/* Left - Text */}
+          <motion.div
+            variants={container}
+            initial="hidden"
+            animate="show"
           >
-            <span className="text-red-500">Gavin</span> Pase
-          </motion.h1>
+            <motion.h1
+              variants={item}
+              className="font-serif text-4xl text-primary md:text-6xl lg:text-7xl"
+            >
+              <span className="text-red-500">Gavin</span> Pase
+            </motion.h1>
 
-          <motion.p
-            variants={item}
-            className="mt-4 text-xl text-secondary md:text-2xl"
-          >
-            Full Stack Developer
-          </motion.p>
+            <motion.p
+              variants={item}
+              className="mt-4 text-xl text-secondary md:text-2xl"
+            >
+              Full Stack Developer
+            </motion.p>
 
-          <motion.p
-            variants={item}
-            className="mt-6 font-mono text-sm text-muted md:text-base"
-          >
-            // turning ideas into reality with clean code
-          </motion.p>
+            <motion.p
+              variants={item}
+              className="mt-6 font-mono text-sm text-muted md:text-base"
+            >
+              // turning ideas into reality with clean code
+            </motion.p>
 
-          <motion.div variants={item} className="mt-10 flex flex-wrap gap-4">
-            <Button href="#projects">View Projects</Button>
-            <Button href="#contact" variant="secondary">
-              Get in Touch
-            </Button>
+            <motion.div variants={item} className="mt-10 flex flex-wrap gap-4">
+              <Button href="#projects">View Projects</Button>
+              <Button href="#contact" variant="secondary">
+                Get in Touch
+              </Button>
+            </motion.div>
           </motion.div>
-        </motion.div>
+
+          {/* Right - Code Block */}
+          <CodeBlock />
+        </div>
       </div>
 
       {/* Scroll indicator */}

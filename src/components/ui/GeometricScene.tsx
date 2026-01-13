@@ -30,12 +30,12 @@ function Shape({ position, geometry, color, size, speed, floatIntensity }: Shape
       meshRef.current.position.x = THREE.MathUtils.lerp(
         meshRef.current.position.x,
         targetX,
-        0.03
+        0.01
       )
       meshRef.current.position.y = THREE.MathUtils.lerp(
         meshRef.current.position.y,
         targetY,
-        0.03
+        0.01
       )
     }
   })

@@ -1,7 +1,10 @@
-import { useRef, useMemo } from 'react'
-import { Canvas, useFrame, useThree } from '@react-three/fiber'
+import { useRef, useMemo, useEffect, useState } from 'react'
+import { Canvas, useFrame } from '@react-three/fiber'
 import { Float } from '@react-three/drei'
 import * as THREE from 'three'
+
+// Global mouse position normalized to -1 to 1
+const mousePosition = { x: 0, y: 0 }
 
 interface ShapeProps {
   position: [number, number, number]
@@ -14,7 +17,6 @@ interface ShapeProps {
 
 function Shape({ position, geometry, color, size, speed, floatIntensity }: ShapeProps) {
   const meshRef = useRef<THREE.Mesh>(null!)
-  const { pointer } = useThree()
 
   useFrame((state, delta) => {
     if (meshRef.current) {
@@ -23,8 +25,8 @@ function Shape({ position, geometry, color, size, speed, floatIntensity }: Shape
       meshRef.current.rotation.y += delta * speed * 0.2
 
       // Mouse follow effect - shapes move toward cursor
-      const targetX = position[0] + pointer.x * 1.2
-      const targetY = position[1] + pointer.y * 1.2
+      const targetX = position[0] + mousePosition.x * 1.5
+      const targetY = position[1] + mousePosition.y * 1.5
       meshRef.current.position.x = THREE.MathUtils.lerp(
         meshRef.current.position.x,
         targetX,
@@ -181,8 +183,20 @@ function Scene() {
 }
 
 export function GeometricScene() {
+  // Track mouse position globally so it works even when hovering over other elements
+  useEffect(() => {
+    const handleMouseMove = (event: MouseEvent) => {
+      // Normalize to -1 to 1 range
+      mousePosition.x = (event.clientX / window.innerWidth) * 2 - 1
+      mousePosition.y = -((event.clientY / window.innerHeight) * 2 - 1)
+    }
+
+    window.addEventListener('mousemove', handleMouseMove)
+    return () => window.removeEventListener('mousemove', handleMouseMove)
+  }, [])
+
   return (
-    <div className="absolute inset-0 hidden lg:block">
+    <div className="absolute inset-0 hidden lg:block pointer-events-none">
       <Canvas
         camera={{ position: [0, 0, 6], fov: 45 }}
         style={{ background: 'transparent' }}

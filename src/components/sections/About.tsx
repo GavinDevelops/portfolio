@@ -51,7 +51,7 @@ export function About() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: [0.25, 0.1, 0.25, 1], delay: 0.2 }}
             viewport={{ once: true }}
-            className="flex flex-col items-center gap-10 md:-mt-8 lg:-mt-12"
+            className="flex flex-col items-center gap-10 md:-mt-16 lg:-mt-24"
           >
             {/* Profile Photo */}
             <div className="relative overflow-visible">

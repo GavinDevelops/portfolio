@@ -22,18 +22,18 @@ function Shape({ position, geometry, color, size, speed, floatIntensity }: Shape
       meshRef.current.rotation.x += delta * speed * 0.3
       meshRef.current.rotation.y += delta * speed * 0.2
 
-      // Subtle mouse follow effect
-      const targetX = position[0] + pointer.x * 0.3
-      const targetY = position[1] + pointer.y * 0.3
+      // Mouse follow effect - shapes move toward cursor
+      const targetX = position[0] + pointer.x * 1.2
+      const targetY = position[1] + pointer.y * 1.2
       meshRef.current.position.x = THREE.MathUtils.lerp(
         meshRef.current.position.x,
         targetX,
-        0.02
+        0.08
       )
       meshRef.current.position.y = THREE.MathUtils.lerp(
         meshRef.current.position.y,
         targetY,
-        0.02
+        0.08
       )
     }
   })

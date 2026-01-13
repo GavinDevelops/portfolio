@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="bg4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a1a1d"/>
+      <stop offset="100%" stop-color="#0a0a0b"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg4)"/>
+  <!-- Grid -->
+  <g stroke="#06b6d4" stroke-opacity="0.08" stroke-width="1">
+    <line x1="100" y1="100" x2="100" y2="350"/>
+    <line x1="100" y1="350" x2="700" y2="350"/>
+  </g>
+  <!-- Bar chart -->
+  <g fill-opacity="0.8">
+    <rect x="150" y="250" width="60" height="100" fill="#f59e0b" rx="4"/>
+    <rect x="250" y="180" width="60" height="170" fill="#06b6d4" rx="4"/>
+    <rect x="350" y="220" width="60" height="130" fill="#c084fc" rx="4"/>
+    <rect x="450" y="140" width="60" height="210" fill="#4ade80" rx="4"/>
+    <rect x="550" y="200" width="60" height="150" fill="#fb923c" rx="4"/>
+    <rect x="650" y="160" width="60" height="190" fill="#f59e0b" rx="4"/>
+  </g>
+  <!-- Line chart overlay -->
+  <polyline
+    points="180,230 280,160 380,200 480,120 580,180 680,140"
+    fill="none"
+    stroke="#f4f4f5"
+    stroke-width="2"
+    stroke-opacity="0.5"
+    stroke-dasharray="5,5"
+  />
+  <!-- Data points -->
+  <g fill="#f4f4f5">
+    <circle cx="180" cy="230" r="4"/>
+    <circle cx="280" cy="160" r="4"/>
+    <circle cx="380" cy="200" r="4"/>
+    <circle cx="480" cy="120" r="4"/>
+    <circle cx="580" cy="180" r="4"/>
+    <circle cx="680" cy="140" r="4"/>
+  </g>
+  <!-- Decorative -->
+  <circle cx="700" cy="80" r="40" fill="#c084fc" fill-opacity="0.1"/>
+  <!-- Text -->
+  <text x="400" y="400" text-anchor="middle" fill="#52525b" font-family="monospace" font-size="14">Real-time Analytics</text>
+</svg>

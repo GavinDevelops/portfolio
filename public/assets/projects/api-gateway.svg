@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a1a1d"/>
+      <stop offset="100%" stop-color="#0a0a0b"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg3)"/>
+  <!-- Grid -->
+  <g stroke="#4ade80" stroke-opacity="0.08" stroke-width="1">
+    <line x1="0" y1="90" x2="800" y2="90"/>
+    <line x1="0" y1="180" x2="800" y2="180"/>
+    <line x1="0" y1="270" x2="800" y2="270"/>
+    <line x1="0" y1="360" x2="800" y2="360"/>
+  </g>
+  <!-- API Gateway diagram -->
+  <g fill="none" stroke-width="2">
+    <!-- Left nodes -->
+    <circle cx="150" cy="150" r="30" stroke="#4ade80"/>
+    <circle cx="150" cy="225" r="30" stroke="#4ade80"/>
+    <circle cx="150" cy="300" r="30" stroke="#4ade80"/>
+    <!-- Gateway box -->
+    <rect x="320" y="160" width="160" height="130" rx="8" stroke="#f59e0b" stroke-width="2.5"/>
+    <text x="400" y="230" text-anchor="middle" fill="#f59e0b" font-family="monospace" font-size="12">GATEWAY</text>
+    <!-- Right nodes -->
+    <circle cx="650" cy="150" r="30" stroke="#06b6d4"/>
+    <circle cx="650" cy="225" r="30" stroke="#06b6d4"/>
+    <circle cx="650" cy="300" r="30" stroke="#06b6d4"/>
+    <!-- Connections -->
+    <line x1="180" y1="150" x2="320" y2="200" stroke="#4ade80" stroke-opacity="0.5"/>
+    <line x1="180" y1="225" x2="320" y2="225" stroke="#4ade80" stroke-opacity="0.5"/>
+    <line x1="180" y1="300" x2="320" y2="250" stroke="#4ade80" stroke-opacity="0.5"/>
+    <line x1="480" y1="200" x2="620" y2="150" stroke="#06b6d4" stroke-opacity="0.5"/>
+    <line x1="480" y1="225" x2="620" y2="225" stroke="#06b6d4" stroke-opacity="0.5"/>
+    <line x1="480" y1="250" x2="620" y2="300" stroke="#06b6d4" stroke-opacity="0.5"/>
+  </g>
+  <!-- Text -->
+  <text x="400" y="400" text-anchor="middle" fill="#52525b" font-family="monospace" font-size="14">API Gateway Service</text>
+</svg>

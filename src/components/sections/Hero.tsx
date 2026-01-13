@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import { ArrowDown } from '@phosphor-icons/react'
-import { Button } from '@/components/ui'
+import { Button, GeometricScene } from '@/components/ui'
 
 const container = {
   hidden: { opacity: 0 },
@@ -30,6 +30,9 @@ export function Hero() {
         <div className="absolute inset-0 bg-gradient-radial" />
         <div className="absolute inset-0 bg-grid" />
       </div>
+
+      {/* 3D Geometric Pattern */}
+      <GeometricScene />
 
       {/* Content */}
       <div className="container relative z-10 py-32 md:py-40">

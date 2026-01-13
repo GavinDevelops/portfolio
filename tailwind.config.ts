@@ -29,9 +29,11 @@ export default {
           500: '#06b6d4',
         },
 
-        // Accent - Rose
-        rose: {
-          500: '#f43f5e',
+        // Accent - Red (primary pop color)
+        red: {
+          400: '#f87171',
+          500: '#ef4444',
+          600: '#dc2626',
         },
 
         // Syntax colors

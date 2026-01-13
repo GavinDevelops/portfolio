@@ -43,7 +43,7 @@ export function Header() {
             <li key={link.href}>
               <a
                 href={link.href}
-                className="text-sm uppercase tracking-wider text-secondary transition-colors hover:text-primary"
+                className="text-sm uppercase tracking-wider text-secondary transition-colors hover:text-red-500"
               >
                 {link.label}
               </a>
@@ -77,7 +77,7 @@ export function Header() {
                   key={link.href}
                   href={link.href}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="font-serif text-2xl text-primary transition-colors hover:text-amber-400"
+                  className="font-serif text-2xl text-primary transition-colors hover:text-red-500"
                 >
                   {link.label}
                 </a>

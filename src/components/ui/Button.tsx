@@ -21,10 +21,10 @@ export function Button({
   type = 'button',
 }: ButtonProps) {
   const baseStyles =
-    'inline-flex items-center justify-center font-sans font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 focus-visible:ring-offset-void disabled:pointer-events-none disabled:opacity-50'
+    'inline-flex items-center justify-center font-sans font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500 focus-visible:ring-offset-2 focus-visible:ring-offset-void disabled:pointer-events-none disabled:opacity-50'
 
   const variants = {
-    primary: 'bg-amber-500 text-void hover:bg-amber-400',
+    primary: 'bg-red-500 text-white hover:bg-red-400',
     secondary: 'border border-raised bg-raised text-primary hover:bg-surface-hover hover:border-muted',
     ghost: 'text-secondary hover:text-primary hover:bg-raised',
   }

@@ -43,7 +43,7 @@ export function Hero() {
             variants={item}
             className="font-serif text-4xl text-primary md:text-6xl lg:text-7xl"
           >
-            Gavin Pase
+            <span className="text-red-500">Gavin</span> Pase
           </motion.h1>
 
           <motion.p
@@ -78,7 +78,7 @@ export function Hero() {
       >
         <a
           href="#about"
-          className="flex flex-col items-center gap-2 text-muted transition-colors hover:text-primary"
+          className="flex flex-col items-center gap-2 text-muted transition-colors hover:text-red-500"
         >
           <span className="text-xs uppercase tracking-wider">Scroll</span>
           <motion.div

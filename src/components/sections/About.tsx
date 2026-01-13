@@ -54,8 +54,8 @@ export function About() {
             className="flex flex-col items-center gap-10"
           >
             {/* Profile Photo */}
-            <div className="relative">
-              <div className="h-48 w-48 overflow-hidden rounded-full border-2 border-raised bg-raised md:h-56 md:w-56">
+            <div className="relative overflow-visible">
+              <div className="h-48 w-48 overflow-hidden rounded-full border-2 border-raised bg-raised md:h-64 md:w-64 lg:h-80 lg:w-80">
                 <img
                   src="/assets/profile.jpg"
                   alt="Gavin Pase"

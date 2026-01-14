@@ -112,11 +112,11 @@ export function Contact() {
 
             <div className="space-y-4">
               <a
-                href="mailto:hello@example.com"
+                href="mailto:gavin.pase.develops@gmail.com"
                 className="flex items-center gap-3 text-secondary transition-colors hover:text-amber-400"
               >
                 <EnvelopeSimple size={20} weight="duotone" />
-                hello@example.com
+                gavin.pase.develops@gmail.com
               </a>
               <div className="flex items-center gap-3 text-secondary">
                 <MapPin size={20} weight="duotone" />

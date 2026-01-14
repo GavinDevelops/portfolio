@@ -17,7 +17,7 @@ export const projects: Project[] = [
     description: 'Full-stack image management platform with location-based metadata, multi-device sync, and an admin dashboard.',
     longDescription:
       'Full-stack image management platform built with Go and React. Features location-based metadata, multi-device sync, JWT authentication with token refresh, and an admin dashboard. Backed by PostgreSQL with automatic schema migrations.',
-    image: '/assets/projects/fullstack-app.svg',
+    image: '/assets/adjusterPhotoWebApp.png',
     technologies: ['Go', 'React', 'TypeScript', 'PostgreSQL', 'Tailwind CSS', 'Docker', 'Traefik'],
     liveUrl: 'https://app.adjusterphoto.com/',
     featured: true,

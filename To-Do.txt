@@ -1,0 +1,20 @@
+Portfolio To-Do List
+====================
+
+ASSETS TO ADD
+-------------
+[ ] Profile photo → public/assets/profile.jpg
+[ ] Project images → public/assets/projects/fullstack-app.svg
+[ ] Project images → public/assets/projects/portfolio.svg
+[ ] Favicon → public/favicon.svg
+[ ] Open Graph image → public/og-image.png (for social sharing previews)
+
+CONTENT TO UPDATE
+-----------------
+[ ] Social links in Footer (GitHub, LinkedIn, Twitter) → src/components/layout/Footer.tsx
+[ ] Project GitHub URLs → src/data/projects.ts
+[ ] Project descriptions with actual details → src/data/projects.ts
+
+CONFIGURATION
+-------------
+[ ] Contact form → verify Netlify Forms is configured or set up alternative

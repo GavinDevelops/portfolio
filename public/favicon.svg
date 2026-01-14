@@ -1,4 +1,20 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <rect width="32" height="32" rx="6" fill="#0a0a0b"/>
-  <text x="16" y="22" text-anchor="middle" fill="#f59e0b" font-family="Georgia, serif" font-size="16" font-weight="bold">YN</text>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a1a1d"/>
+      <stop offset="100%" stop-color="#0a0a0b"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="32" height="32" rx="6" fill="url(#bg)"/>
+
+  <!-- Code bracket accents -->
+  <path d="M6 10 L3 16 L6 22" stroke="#ef4444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.5"/>
+  <path d="M26 10 L29 16 L26 22" stroke="#ef4444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.5"/>
+
+  <!-- GP monogram -->
+  <text x="16" y="21" font-family="Georgia, serif" font-size="13" font-weight="bold" text-anchor="middle">
+    <tspan fill="#ef4444">G</tspan><tspan fill="#f4f4f5">P</tspan>
+  </text>
 </svg>

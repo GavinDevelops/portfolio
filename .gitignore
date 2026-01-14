@@ -34,3 +34,6 @@ lerna-debug.log*
 .env.development.local
 .env.test.local
 .env.production.local
+CLAUDE.md
+PLAN.md
+To-Do.txt

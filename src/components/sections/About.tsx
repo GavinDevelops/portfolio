@@ -57,7 +57,7 @@ export function About() {
             <div className="relative overflow-visible">
               <div className="h-48 w-48 overflow-hidden rounded-full border-2 border-raised bg-raised md:h-64 md:w-64 lg:h-80 lg:w-80">
                 <img
-                  src="/assets/profile.jpg"
+                  src="/assets/profile.webp"
                   alt="Gavin Pase"
                   className="h-full w-full object-cover"
                 />

@@ -58,7 +58,7 @@ export function Hero() {
 
           <motion.p
             variants={item}
-            className="mt-6 font-mono text-sm text-syntax-green/80 md:text-base"
+            className="mt-6 font-mono text-sm text-secondary md:text-base"
           >
             // turning ideas into reality with clean code
           </motion.p>

@@ -12,7 +12,7 @@ export function useScrollReveal(options: UseScrollRevealOptions = {}) {
   const { once = true, margin = '-100px', amount = 0.3 } = options
   const ref = useRef(null)
   const shouldReduceMotion = useReducedMotion()
-  const isInView = useInView(ref, { once, margin, amount })
+  const isInView = useInView(ref, { once, margin: margin as `${number}px`, amount })
 
   const variants = {
     hidden: shouldReduceMotion ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 },

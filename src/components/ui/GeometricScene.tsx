@@ -1,4 +1,4 @@
-import { useRef, useMemo, useEffect, useState } from 'react'
+import { useRef, useMemo, useEffect } from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
 import { Float } from '@react-three/drei'
 import * as THREE from 'three'
@@ -18,7 +18,7 @@ interface ShapeProps {
 function Shape({ position, geometry, color, size, speed, floatIntensity }: ShapeProps) {
   const meshRef = useRef<THREE.Mesh>(null!)
 
-  useFrame((state, delta) => {
+  useFrame((_, delta) => {
     if (meshRef.current) {
       // Gentle rotation
       meshRef.current.rotation.x += delta * speed * 0.3

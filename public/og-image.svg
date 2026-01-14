@@ -23,22 +23,6 @@
   <!-- Accent glow -->
   <ellipse cx="900" cy="200" rx="400" ry="300" fill="url(#accent-grad)"/>
 
-  <!-- Geometric shapes (wireframe style) -->
-  <g stroke="#ef4444" stroke-width="1.5" fill="none" opacity="0.4">
-    <!-- Icosahedron-like shape -->
-    <polygon points="1050,120 1100,180 1080,250 1020,250 1000,180"/>
-    <line x1="1050" y1="120" x2="1050" y2="200"/>
-    <line x1="1000" y1="180" x2="1080" y2="250"/>
-    <line x1="1100" y1="180" x2="1020" y2="250"/>
-  </g>
-
-  <g stroke="#fbbf24" stroke-width="1.5" fill="none" opacity="0.3">
-    <!-- Octahedron-like shape -->
-    <polygon points="150,450 200,500 150,550 100,500"/>
-    <line x1="150" y1="450" x2="150" y2="550"/>
-    <line x1="100" y1="500" x2="200" y2="500"/>
-  </g>
-
   <!-- Code brackets decoration -->
   <text x="80" y="340" font-family="Georgia, serif" font-size="120" fill="#ef4444" opacity="0.15">&lt;</text>
   <text x="1070" y="340" font-family="Georgia, serif" font-size="120" fill="#ef4444" opacity="0.15">&gt;</text>

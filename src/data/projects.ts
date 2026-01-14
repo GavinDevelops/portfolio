@@ -17,7 +17,7 @@ export const projects: Project[] = [
     description: 'Full-stack image management platform with location-based metadata, multi-device sync, and an admin dashboard.',
     longDescription:
       'Full-stack image management platform built with Go and React. Features location-based metadata, multi-device sync, JWT authentication with token refresh, and an admin dashboard. Backed by PostgreSQL with automatic schema migrations.',
-    image: '/assets/adjusterPhotoWebApp.png',
+    image: '/assets/projects/adjusterPhotoWebApp.webp',
     technologies: ['Go', 'React', 'TypeScript', 'PostgreSQL', 'Tailwind CSS', 'Docker', 'Traefik'],
     liveUrl: 'https://app.adjusterphoto.com/',
     featured: true,
@@ -38,7 +38,7 @@ export const projects: Project[] = [
     description: 'This website — a modern portfolio built with React and Tailwind.',
     longDescription:
       'Designed and developed a responsive portfolio site featuring smooth animations with Framer Motion and a clean, dark aesthetic.',
-    image: '/assets/projects/portfolio.svg',
+    image: '/assets/projects/portfolio.webp',
     technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
     githubUrl: 'https://github.com/GavinDevelops/portfolio',
     featured: true,

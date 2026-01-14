@@ -64,7 +64,9 @@ function Shape({ position, geometry, color, size, speed, floatIntensity }: Shape
           color={color}
           wireframe
           transparent
-          opacity={0.6}
+          opacity={0.85}
+          emissive={color}
+          emissiveIntensity={0.3}
         />
       </mesh>
     </Float>
@@ -79,8 +81,8 @@ function Particles() {
     const positions = new Float32Array(particleCount * 3)
     const colors = new Float32Array(particleCount * 3)
 
-    const redColor = new THREE.Color('#ef4444')
-    const amberColor = new THREE.Color('#f59e0b')
+    const redColor = new THREE.Color('#ff3b3b')
+    const amberColor = new THREE.Color('#ffb800')
 
     for (let i = 0; i < particleCount; i++) {
       const i3 = i * 3
@@ -136,7 +138,7 @@ function Scene() {
     {
       position: [2, 1, 0],
       geometry: 'icosahedron',
-      color: '#ef4444',
+      color: '#ff3b3b',
       size: 0.8,
       speed: 1.5,
       floatIntensity: 1,
@@ -144,7 +146,7 @@ function Scene() {
     {
       position: [3, -1.5, -1],
       geometry: 'octahedron',
-      color: '#f59e0b',
+      color: '#ffb800',
       size: 0.6,
       speed: 2,
       floatIntensity: 1.5,
@@ -152,7 +154,7 @@ function Scene() {
     {
       position: [1, -0.5, 0.5],
       geometry: 'dodecahedron',
-      color: '#ef4444',
+      color: '#22d3ee',
       size: 0.5,
       speed: 1,
       floatIntensity: 2,
@@ -160,7 +162,7 @@ function Scene() {
     {
       position: [4, 0.5, -0.5],
       geometry: 'icosahedron',
-      color: '#fbbf24',
+      color: '#ffe14d',
       size: 0.4,
       speed: 2.5,
       floatIntensity: 1.2,
@@ -169,9 +171,9 @@ function Scene() {
 
   return (
     <>
-      <ambientLight intensity={0.5} />
-      <pointLight position={[10, 10, 10]} intensity={1} color="#f59e0b" />
-      <pointLight position={[-10, -10, -10]} intensity={0.5} color="#ef4444" />
+      <ambientLight intensity={0.6} />
+      <pointLight position={[10, 10, 10]} intensity={1.2} color="#ffb800" />
+      <pointLight position={[-10, -10, -10]} intensity={0.8} color="#ff3b3b" />
 
       {shapes.map((shape, index) => (
         <Shape key={index} {...shape} />

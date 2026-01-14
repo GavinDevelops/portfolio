@@ -12,15 +12,24 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    id: 'project-1',
-    title: 'Full Stack Application',
-    description: 'A cross-platform application with web and mobile clients powered by a Go backend.',
+    id: 'adjuster-photo-web',
+    title: 'Adjuster Photo',
+    description: 'Full-stack image management platform with location-based metadata, multi-device sync, and an admin dashboard.',
     longDescription:
-      'Built a complete application featuring a Go REST API, React web frontend with Tailwind styling, and a native Swift iOS app. Includes user authentication and real-time data sync.',
+      'Full-stack image management platform built with Go and React. Features location-based metadata, multi-device sync, JWT authentication with token refresh, and an admin dashboard. Backed by PostgreSQL with automatic schema migrations.',
     image: '/assets/projects/fullstack-app.svg',
-    technologies: ['Go', 'React', 'Swift', 'Tailwind CSS'],
-    // liveUrl: 'https://example.com',
-    // githubUrl: 'https://github.com/gavinpase/project',
+    technologies: ['Go', 'React', 'TypeScript', 'PostgreSQL', 'Tailwind CSS', 'Docker', 'Traefik'],
+    liveUrl: 'https://app.adjusterphoto.com/',
+    featured: true,
+  },
+  {
+    id: 'adjuster-photo-ios',
+    title: 'Adjuster Photo iOS',
+    description: 'Native iOS app for insurance adjusters to capture and upload property damage photos with offline-first sync.',
+    longDescription:
+      'A native iOS app built with Swift/SwiftUI for insurance adjusters to capture and upload property damage photos. Features offline-first architecture with automatic sync, multi-camera zoom support, and secure JWT authentication. Photos are tagged with location, damage category, and directional metadata for streamlined claims processing.',
+    image: '/assets/projects/adjuster-ios.svg',
+    technologies: ['Swift', 'SwiftUI', 'iOS', 'Core Data'],
     featured: true,
   },
   {
@@ -31,7 +40,7 @@ export const projects: Project[] = [
       'Designed and developed a responsive portfolio site featuring smooth animations with Framer Motion and a clean, dark aesthetic.',
     image: '/assets/projects/portfolio.svg',
     technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
-    githubUrl: 'https://github.com/gavinpase/portfolio',
+    githubUrl: 'https://github.com/GavinDevelops/portfolio',
     featured: true,
   },
 ]

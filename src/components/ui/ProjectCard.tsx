@@ -26,13 +26,24 @@ export function ProjectCard({ project, featured = false }: ProjectCardProps) {
           featured ? 'aspect-[2/1]' : 'aspect-video'
         )}
       >
-        <div className="absolute inset-0 bg-gradient-to-t from-raised to-transparent" />
-        <img
-          src={project.image}
-          alt={project.title}
-          className="h-full w-full object-cover opacity-80 transition-transform duration-500 group-hover:scale-105"
-          loading="lazy"
-        />
+        <div className="absolute inset-0 bg-gradient-to-t from-raised to-transparent z-10" />
+        {project.mobileApp ? (
+          <div className="absolute inset-0 flex items-center justify-center p-6">
+            <img
+              src={project.image}
+              alt={project.title}
+              className="h-full w-auto max-w-full rounded-2xl object-contain opacity-90 shadow-2xl transition-transform duration-500 group-hover:scale-105"
+              loading="lazy"
+            />
+          </div>
+        ) : (
+          <img
+            src={project.image}
+            alt={project.title}
+            className="h-full w-full object-cover opacity-80 transition-transform duration-500 group-hover:scale-105"
+            loading="lazy"
+          />
+        )}
       </div>
 
       {/* Content */}

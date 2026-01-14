@@ -8,6 +8,7 @@ export interface Project {
   liveUrl?: string
   githubUrl?: string
   featured: boolean
+  mobileApp?: boolean
 }
 
 export const projects: Project[] = [
@@ -28,9 +29,10 @@ export const projects: Project[] = [
     description: 'Native iOS app for insurance adjusters to capture and upload property damage photos with offline-first sync.',
     longDescription:
       'A native iOS app built with Swift/SwiftUI for insurance adjusters to capture and upload property damage photos. Features offline-first architecture with automatic sync, multi-camera zoom support, and secure JWT authentication. Photos are tagged with location, damage category, and directional metadata for streamlined claims processing.',
-    image: '/assets/projects/adjuster-ios.svg',
+    image: '/assets/projects/adjusterIOSApp.webp',
     technologies: ['Swift', 'SwiftUI', 'iOS', 'Core Data'],
     featured: true,
+    mobileApp: true,
   },
   {
     id: 'project-2',

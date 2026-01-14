@@ -71,7 +71,7 @@ export function Header() {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: '100%' }}
             transition={{ duration: 0.2 }}
-            className="fixed inset-y-0 right-0 z-40 w-full bg-base md:hidden"
+            className="fixed inset-y-0 right-0 z-40 w-full bg-surface md:hidden"
           >
             <nav className="flex h-full flex-col items-center justify-center gap-8">
               {navLinks.map((link) => (

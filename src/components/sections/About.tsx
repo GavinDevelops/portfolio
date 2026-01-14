@@ -12,7 +12,7 @@ export function About() {
   const { ref, animate, initial, variants, transition } = useScrollReveal()
 
   return (
-    <section id="about" className="section bg-base">
+    <section id="about" className="section bg-surface">
       <div className="container">
         <SectionHeader
           title="About Me"

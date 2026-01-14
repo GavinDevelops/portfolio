@@ -32,7 +32,7 @@ export function Contact() {
   }
 
   return (
-    <section id="contact" className="section bg-base">
+    <section id="contact" className="section bg-surface">
       <div className="container">
         <SectionHeader
           title="Get in Touch"

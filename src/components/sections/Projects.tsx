@@ -26,7 +26,7 @@ export function Projects() {
   const otherProjects = projects.filter((p) => !p.featured)
 
   return (
-    <section id="projects" className="section bg-base">
+    <section id="projects" className="section bg-surface">
       <div className="container">
         <SectionHeader
           title="Featured Projects"

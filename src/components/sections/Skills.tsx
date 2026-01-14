@@ -37,7 +37,7 @@ function CodeBlock() {
       viewport={{ once: true }}
       className="w-full max-w-md"
     >
-      <div className="rounded-lg border border-raised bg-base/80 backdrop-blur-sm">
+      <div className="rounded-lg border border-raised bg-surface/80 backdrop-blur-sm">
         {/* Window chrome */}
         <div className="flex items-center gap-2 border-b border-raised px-4 py-3">
           <div className="h-3 w-3 rounded-full bg-red-500/80" />

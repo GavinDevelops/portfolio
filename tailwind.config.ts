@@ -7,7 +7,7 @@ export default {
       colors: {
         // Background layers
         void: '#0a0a0b',
-        base: '#121214',
+        surface: '#121214',
         raised: '#1a1a1d',
         'surface-hover': '#242428',
 
